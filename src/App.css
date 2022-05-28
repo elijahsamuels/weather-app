@@ -38,14 +38,66 @@ main {
 	border: none;
 	outline: none;
 	background-color: #ffffffaa;
-	border-radius: 0 0 25px 25px; 
+	border-radius: 0 0 15px 15px; 
 	margin-top: -25px;
 	box-shadow: 0px 2px #76767682;
-	color: #ffffff;
+	color: #000000;
 	font-size: 2rem;
 	transition: 0.5s ease;
 }
 
 .search-box .search-bar:focus {
 	background-color: #ffffffee;
+}
+
+.location-box .location {
+	color: #ffffff;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 3px 3px #4d4d4d;
+}
+
+.location-box .date {
+	color: #ffffff;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 3px 3px #4d4d4d;
+}
+
+.weather-box {
+	color: #ffffff;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 3px 3px #4d4d4d;
+}
+
+.weather-box .temperature {
+	position: relative;
+	display: inline-block;
+	margin: 30px auto;
+	color: #ffffff;
+	background-color: #ffffff4c;
+	border-radius: 15px;
+	padding: 1rem;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	/* text-shadow: 3px 3px #4d4d4d; */
+}
+
+.weather-box .temperature-highlow {
+	font-size: 1.5rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+.weather-box .weather {
+	color: #ffffff;
+	padding: 1rem;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
 }
