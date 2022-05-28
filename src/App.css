@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.app {
+	background-image: url('./assests/winter.png');
+	background-size: cover;
+	background-position: top;
+	transition: 0.4 ease-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app.warm {
+	background-image: url('./assests/sunny.png');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+main {
+	min-height: 100vh;
+	background-image: linear-gradient(to bottom, #00000000, #00000080);
+	padding: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box {
+	width: 100%;
+	margin: 0 0 75px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-box .search-bar {
+	display: block;
+	width: 100%;
+	padding: 21px;
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+	background-color: #ffffffaa;
+	border-radius: 0 0 25px 25px; 
+	margin-top: -25px;
+	box-shadow: 0px 2px #76767682;
+	color: #ffffff;
+	font-size: 2rem;
+	transition: 0.5s ease;
+}
+
+.search-box .search-bar:focus {
+	background-color: #ffffffee;
 }
